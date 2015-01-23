@@ -1,0 +1,135 @@
+$blue : #0a78f3;
+
+/* Overwrite Bootstrap style */
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+.sprite {
+	background-image : url('../img/sprites.png');
+	background-repeat: no-repeat;
+}
+
+body {
+	font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+
+header {
+	background: #FFFFFF url('../img/header-bg.jpg') no-repeat;
+	background-size: cover;
+	height: 482px;
+
+	.site-logo {
+		float: left;
+		padding-top: 40px;
+		.logo {
+			font-size: 45px;
+			font-family: 'Open Sans';
+			font-weight: 800;
+			color: white;
+			margin-bottom: 0;
+		}
+
+		.slogan {
+			color: white;
+			font-size: 16px;
+			margin-top: 5px;
+		}
+	}
+
+	.site-info {
+		float: right;
+		padding-top: 10px;
+		text-align: right;
+
+		.language-bar {
+			color: #8c8c8c;
+			margin-bottom: 5px;
+
+			span.active {
+				color: #00a0ff;
+			}
+		}
+
+		.header-social-link ul {
+			list-style: none;
+
+			li {
+				display: inline-block;
+				margin-left: 5px;
+
+				.icon-fb {
+					@extend .sprite;
+					background-position: -100px 0;
+					width: 30px;
+					height: 30px;
+					display: inline-block; 
+				}
+
+				.icon-tt {
+					@extend .sprite;
+					background-position: -150px 0;
+					width: 30px;
+					height: 30px;
+					display: inline-block; 
+				}
+
+				.icon-gg {
+					@extend .sprite;
+					background-position: -200px 0;
+					width: 30px;
+					height: 30px;
+					display: inline-block; 
+				}
+			}	
+		}
+
+		.header-hotline {
+			h5 {
+				color: #00a0ff;
+				font-size: 20px;
+				font-style: italic;	
+			}
+
+			p {
+				font-size: 16px;
+				color: #c4c4c4;
+			}
+		}
+	}
+
+	#main-menu {
+		margin-top: 30px;
+
+		ul {
+			list-style: none;
+
+			li {
+				display: inline-block;
+
+				a {
+					padding: 10px 15px;
+					color: white;
+					font-style: italic;
+					text-decoration: none;
+
+					&.current, &:hover, &:focus, &:active {
+						background: #272727;
+						color: #19a9ff;
+						border-radius: 5px;
+					}
+				}
+			}	
+		}
+	}
+
+}
+
+#slider {
+	background: url('../img/banner.jpg') no-repeat;
+	height: 360px;
+	width: 100%;
+	margin-top: -260px;
+}
