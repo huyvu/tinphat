@@ -2,7 +2,7 @@
 @media (min-width: 1200px) {
   .container {
     width: 970px; } }
-.sprite, header .site-info .header-social-link ul li .icon-fb, header .site-info .header-social-link ul li .icon-tt, header .site-info .header-social-link ul li .icon-gg {
+.sprite, .social-link ul li .icon-fb, .social-link ul li .icon-tt, .social-link ul li .icon-gg, .social-link ul li .icon-fb-hover, .social-link ul li .icon-tt-hover, .social-link ul li .icon-gg-hover, .testimonial-star {
   background-image: url("../img/sprites.png");
   background-repeat: no-repeat; }
 
@@ -35,26 +35,6 @@ header {
       margin-bottom: 5px; }
       header .site-info .language-bar span.active {
         color: #00a0ff; }
-    header .site-info .header-social-link ul {
-      list-style: none; }
-      header .site-info .header-social-link ul li {
-        display: inline-block;
-        margin-left: 5px; }
-        header .site-info .header-social-link ul li .icon-fb {
-          background-position: -100px 0;
-          width: 30px;
-          height: 30px;
-          display: inline-block; }
-        header .site-info .header-social-link ul li .icon-tt {
-          background-position: -150px 0;
-          width: 30px;
-          height: 30px;
-          display: inline-block; }
-        header .site-info .header-social-link ul li .icon-gg {
-          background-position: -200px 0;
-          width: 30px;
-          height: 30px;
-          display: inline-block; }
     header .site-info .header-hotline h5 {
       color: #00a0ff;
       font-size: 20px;
@@ -78,10 +58,202 @@ header {
             color: #19a9ff;
             border-radius: 5px; }
 
+.social-link ul {
+  list-style: none; }
+  .social-link ul li {
+    display: inline-block;
+    margin-left: 5px; }
+    .social-link ul li .icon-fb {
+      background-position: -100px 0;
+      width: 30px;
+      height: 30px;
+      display: inline-block; }
+    .social-link ul li .icon-tt {
+      background-position: -150px 0;
+      width: 30px;
+      height: 30px;
+      display: inline-block; }
+    .social-link ul li .icon-gg {
+      background-position: -200px 0;
+      width: 30px;
+      height: 30px;
+      display: inline-block; }
+    .social-link ul li .icon-fb-hover {
+      background-position: -251px 0;
+      width: 30px;
+      height: 30px;
+      display: inline-block; }
+    .social-link ul li .icon-tt-hover {
+      background-position: -300px 0;
+      width: 30px;
+      height: 30px;
+      display: inline-block; }
+    .social-link ul li .icon-gg-hover {
+      background-position: -350px 0;
+      width: 30px;
+      height: 30px;
+      display: inline-block; }
+
 #slider {
   background: url("../img/banner.jpg") no-repeat;
   height: 360px;
   width: 100%;
   margin-top: -260px; }
+
+#intro {
+  background: url("../img/intro-bg.png");
+  color: #727272;
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); }
+  #intro:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    bottom: 0px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 50%;
+    -moz-border-radius: 100%;
+    border-radius: 100%; }
+  #intro #intro-content {
+    padding: 30px 100px;
+    text-align: center; }
+    #intro #intro-content h1 {
+      font-family: 'Open Sans';
+      font-weight: 600;
+      color: #d3d3d3; }
+      #intro #intro-content h1 strong {
+        color: #0a78f3; }
+
+.company-info {
+  padding: 80px 0 60px 0;
+  color: #737373; }
+  .company-info article {
+    overflow: hidden; }
+    .company-info article h2 {
+      color: #656565;
+      font-weight: normal; }
+    .company-info article.about img {
+      width: 100%;
+      margin-bottom: 10px; }
+    .company-info article .readmore {
+      float: right; }
+  .company-info .track-shipment {
+    background: url("../img/track-shipment.jpg") no-repeat scroll;
+    width: 100%;
+    min-height: 167px;
+    padding: 22px 15px;
+    overflow: hidden;
+    margin-bottom: 10px; }
+    .company-info .track-shipment select {
+      width: 100%;
+      height: 40px;
+      background: #cfd1d6;
+      padding-left: 10px; }
+    .company-info .track-shipment input[type='submit'] {
+      float: right;
+      padding: 7px 15px;
+      color: white;
+      background: #0a78f3;
+      border: 1px solid white;
+      font-size: 15px;
+      font-style: italic;
+      margin-top: 10px; }
+  .company-info .news .news-item img {
+    float: left;
+    margin-right: 5px; }
+  .company-info .news .news-item .news-details h4 {
+    color: #0a78f3;
+    font-size: 15px;
+    font-weight: bold; }
+  .company-info .news .news-item .news-details span {
+    font-size: 13px;
+    color: black; }
+  .company-info .news .news-list {
+    list-style: none;
+    padding: 0; }
+    .company-info .news .news-list li span {
+      color: #0a78f3;
+      font-weight: bold; }
+
+.readmore {
+  font-style: italic;
+  color: white;
+  padding: 7px 12px;
+  border-radius: 5px;
+  background: #272727; }
+  .readmore:hover {
+    text-decoration: none;
+    color: #0a78f3; }
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 30px; }
+  .section-heading h1 {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 40px;
+    color: #454545; }
+
+.testimonial-star {
+  background-position: -400px 0;
+  width: 100px;
+  height: 17px;
+  display: inline-block;
+  text-align: center; }
+
+.our-service {
+  background: #393939;
+  border-top: 5px solid #272727; }
+
+.testimonial {
+  color: #727272; }
+  .testimonial .carousel-control.right {
+    background: none; }
+  .testimonial .carousel-control.left {
+    background: none; }
+  .testimonial .comment {
+    padding: 10px 0;
+    border-bottom: 1px solid black; }
+  .testimonial .author-info {
+    padding: 10px 0; }
+    .testimonial .author-info .author-name {
+      font-size: 26px;
+      color: #7eb8f8;
+      display: block; }
+
+footer {
+  background: #3b3b3b;
+  color: #b4b4b4;
+  margin-top: 60px;
+  padding: 0 0 20px 0; }
+  footer .footer-top article h3 {
+    color: #2a8fff;
+    font-size: 15px; }
+  footer .footer-top article ul {
+    list-style: none;
+    padding: 0; }
+    footer .footer-top article ul li {
+      margin-bottom: 8px; }
+  footer .footer-top article .contact li i {
+    width: 25px; }
+  footer .footer-menu {
+    text-align: right;
+    background: #0a78f3;
+    padding: 12px 0;
+    margin: 0; }
+    footer .footer-menu ul {
+      list-style: none;
+      margin: 0; }
+      footer .footer-menu ul li {
+        display: inline-block; }
+        footer .footer-menu ul li a {
+          padding: 10px 15px;
+          color: white;
+          text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
